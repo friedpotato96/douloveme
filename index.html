@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do you love me?</title>
+</head>
+<body>
+    <h1 style="color: white;">Do you Love Me</h1>
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <script src="main.js"></script>
+    <style>
+        body {
+            background-color: #1a1a1a;
+        }
+        @keyframes floatingFlowers {
+            from { background-position: 0 0, 50px 50px; }
+            to { background-position: 100px 100px, 150px 150px; }
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: perspective(1000px) rotateX(5deg);
+            transform-style: preserve-3d;
+        }
+        button {
+            background: linear-gradient(145deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        #noButton {
+            background: linear-gradient(145deg, #ff0000, #cc0000);
+        }
+        #yesButton {
+            background-color: #4CAF50;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            animation: confetti-fall 3s ease-in-out forwards;
+            pointer-events: none;
+        }
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.3);
+        }
+    </style>
+</body>
+</html>
